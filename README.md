@@ -27,23 +27,23 @@ GitHub (new repo detected)
    repo_analyzer.py        ← Reads README, languages, topics, screenshots
          │
          ▼
-   openai_brain.py         ← One GPT-4o call with full context:
+   openai_brain.py         ← One GPT-5.4 call with full context:
          │                    all past projects, last 20 LinkedIn posts,
          │                    narrative arc, target roles
          │
          ├──► github_writer.py     → Updates apoorav21/apoorav21 profile README
-         ├──► resume_writer.py     → GPT-4o edits LaTeX source → tectonic compiles PDF
+         ├──► resume_writer.py     → GPT-5o edits LaTeX source → tectonic compiles PDF
          ├──► linkedin_writer.py   → Posts with project screenshots (if available)
          └──► twitter_writer.py    → Posts a punchy tweet (optional)
 ```
 
 ### Context Awareness
 
-The agent keeps a SQLite database of every repo, every LinkedIn post, every tweet, and the current "narrative arc". Before generating any content, GPT-4o sees all of this — so posts never repeat the same angle, LinkedIn tones rotate, and the resume always reflects the strongest 4-5 projects from your full history.
+The agent keeps a SQLite database of every repo, every LinkedIn post, every tweet, and the current "narrative arc". Before generating any content, GPT-5o sees all of this — so posts never repeat the same angle, LinkedIn tones rotate, and the resume always reflects the strongest 4-5 projects from your full history.
 
 ### Resume Updates (1-page constraint)
 
-The resume is maintained as a LaTeX source file. GPT-4o edits it surgically — updating the Projects section, Summary, and Skills — then `tectonic` compiles it to PDF. If adding a new project would push the resume over one page, the agent automatically drops the lowest-significance project. Every version is stored in SQLite so you can roll back any time.
+The resume is maintained as a LaTeX source file. GPT-5.4 edits it surgically — updating the Projects section, Summary, and Skills — then `tectonic` compiles it to PDF. If adding a new project would push the resume over one page, the agent automatically drops the lowest-significance project. Every version is stored in SQLite so you can roll back any time.
 
 ### LinkedIn Posts (job-seeking mode)
 
@@ -62,7 +62,7 @@ Posts are structured to appeal to technical recruiters and hiring managers:
 ├── orchestrator/main.py          ← Entry point (scheduled or manual)
 ├── monitors/github_monitor.py    ← Polls GitHub for new/updated repos
 ├── analyzers/repo_analyzer.py    ← Fetches README, languages, screenshots
-├── brain/openai_brain.py         ← GPT-4o: generates all content at once
+├── brain/openai_brain.py         ← GPT-5.4: generates all content at once
 ├── writers/
 │   ├── github_writer.py          ← Updates profile README via GitHub API
 │   ├── resume_writer.py          ← LaTeX edits + tectonic PDF compilation
