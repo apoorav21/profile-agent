@@ -138,8 +138,7 @@ def _extract_key_features(repo_name: str, description: str, readme_md: str) -> l
                 },
                 {"role": "user", "content": content}
             ],
-            max_tokens=200,
-            temperature=0.2,
+            max_completion_tokens=200,
         )
         raw = resp.choices[0].message.content.strip()
         # Strip markdown code fence if present

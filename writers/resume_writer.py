@@ -95,8 +95,7 @@ Return ONLY the complete updated LaTeX source, no commentary, no code fences."""
     resp = client.chat.completions.create(
         model=os.getenv("OPENAI_BRAIN_MODEL", "gpt-4o"),
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.2,
-        max_tokens=3500,
+        max_completion_tokens=3500,
     )
 
     new_tex = resp.choices[0].message.content.strip()
@@ -116,8 +115,7 @@ Return ONLY the complete updated LaTeX source, no commentary, no code fences."""
                 {"role": "assistant", "content": new_tex},
                 {"role": "user", "content": "Your response was not valid LaTeX. Return ONLY the raw LaTeX source starting with the comment lines and \\documentclass. No explanation, no markdown, no code fences."},
             ],
-            temperature=0.1,
-            max_tokens=3500,
+            max_completion_tokens=3500,
         )
         new_tex = retry_resp.choices[0].message.content.strip()
         if new_tex.startswith("```"):
