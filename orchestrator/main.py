@@ -210,7 +210,7 @@ def _notify(message: str):
 
 def run_single_repo(repo_name: str):
     """Force-process a specific repo by name, regardless of whether it's new."""
-    from github import Github
+    from github import Github, Auth
 
     start_time = time.time()
     run_record: dict = {
@@ -226,7 +226,7 @@ def run_single_repo(repo_name: str):
 
     db.init_db()
 
-    g = Github(GITHUB_TOKEN)
+    g = Github(auth=Auth.Token(GITHUB_TOKEN))
     try:
         repo = g.get_repo(f"{GITHUB_USERNAME}/{repo_name}")
     except Exception as e:

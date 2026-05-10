@@ -90,31 +90,58 @@ RESUME:
   94% accuracy on 26 ASL gestures."
 - Add to resume_new_skills any tech from the new repo not already in the skills section.
 
-LINKEDIN POST (CRITICAL — Apoorav is actively job-seeking):
-- This post must read like a technical showcase for recruiters and hiring managers.
-- Structure:
-  (1) Hook — ONE punchy opening line. A surprising stat, a bold claim, or a question
-      that makes a technical recruiter stop scrolling. No "I built X" openers.
-  (2) The Problem — what pain or gap this project addresses (1-2 sentences).
-  (3) Tech Breakdown — WHICH specific technologies, WHY you chose them over alternatives,
-      and how the key components connect. Name libraries, frameworks, design decisions.
-      Example: "I chose Apache Airflow over cron because I needed DAG-level retry logic
-      and real-time observability via Prefect."
-  (4) Result — a concrete metric, accuracy number, efficiency gain, or learning takeaway.
-  (5) Repo link — on its own line: "🔗 GitHub: {repo_url}"
-  (6) CTA — end with a direct job signal: "Open to Data Engineer / ML Engineer roles —
-      DM me or connect!" Use line breaks to keep it scannable.
-- Use short paragraphs (2-3 lines max each). Add 1-2 relevant emojis to section breaks
-  to improve readability — not decorative spam, just functional markers (🛠️ ⚡ 📊 🔗).
-- Max 1200 chars. Tone: confident and technical, not academic.
-- HASHTAGS — pick 5-7 from these categories:
-  • Role/job signal: #OpenToWork #HiringNow #DataEngineerJobs #MLEngineer #TechJobs
-  • Tech-specific (match the actual stack): #Python #SQL #ApacheAirflow #LangChain
-    #FastAPI #PostgreSQL #AWS #MediaPipe #TensorFlow #SwiftUI etc.
-  • Community/reach: #BuildInPublic #100DaysOfCode #DevCommunity #SideProject
-  • Domain: #DataEngineering #MachineLearning #ComputerVision #AIAgent #LLM
-  Pick the most relevant — don't use generic ones that don't match the project.
+LINKEDIN POST — study this example and match the exact voice and structure:
+
+EXAMPLE (do not copy, just use as style reference):
+---
+Most people use LLMs as a search engine.
+
+I wanted mine to actually know what I know.
+
+So I built an external brain — a self-compiling knowledge base where the AI reads
+from your own sources, not the internet.
+
+The idea is simple:
+→ Drop articles, notes, or docs into a raw/ folder
+→ Run one command
+→ The AI turns them into structured wiki pages, cross-linked and searchable
+
+The thing I find most useful: when you ask a question, the answer gets filed back
+into the wiki. So the base gets smarter the more you use it — your questions become
+part of the knowledge.
+
+Currently exploring Data Engineering / ML roles where I can build systems like this.
+
+github.com/apoorav21/project-name
+
+What do you use to manage knowledge that actually sticks?
+---
+
+RULES:
+- Open with ONE short observation about a common pattern or frustration (1 line, no fluff).
+  Then pivot: "I wanted..." or "So I built..." — never open with "I built X" directly.
+- NO numbered sections, NO bold headers, NO corporate structure. Write like a person
+  explaining something they genuinely find interesting.
+- Use "→" arrows when listing steps or features — not bullet points, not dashes.
+- Short paragraphs, max 2-3 lines each. Empty line between every paragraph.
+- Drop 1-2 specific technical details (library name, design decision, tradeoff) — enough
+  to show depth, not enough to bore a non-engineer.
+- Include the actual repo URL from the input on its own line near the end (no label, just the URL).
+- End with a genuine question that invites answers — something you'd actually want to
+  hear responses to. Not "Follow me!" or "What do you think?"
+- Weave in one natural job signal (e.g. "exploring Data Engineering / ML roles") — not
+  as a separate paragraph, just woven into the narrative.
+- No decorative emojis. Only use one if it genuinely helps readability.
+- Max 1000 chars. Tight is better than thorough.
 - Never repeat the LinkedIn tone twice in a row.
+
+HASHTAGS — 4-6 tags optimised for reach, appended after the post:
+  Always include 1-2 high-reach tags: #Python #AI #MachineLearning #DataEngineering
+    #GenerativeAI #LLM #BuildInPublic #OpenToWork #SoftwareEngineering
+  Add 2-3 project-specific tags matching the actual stack: #ApacheAirflow #MediaPipe
+    #FastAPI #PostgreSQL #AWS #ComputerVision #LangChain #SwiftUI #ETL etc.
+  Trending engagement tags (pick 1): #BuildInPublic #100DaysOfCode #TechTwitter
+  Never use low-reach generic tags like #Tech #Code #Programming #Developer
 
 TWEET:
 - Punchy standalone insight. Max 200 chars (link + hashtags added separately).

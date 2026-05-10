@@ -173,7 +173,7 @@ python auth/twitter_setup_check.py
 
 | Component | Technology |
 |---|---|
-| AI Brain | OpenAI GPT-4o (brain) + GPT-4o-mini (repo analysis) |
+| AI Brain | OpenAI GPT-5.4 (brain) + GPT-5-mini (repo analysis) |
 | Resume | LaTeX + [tectonic](https://tectonic-typesetting.github.io) |
 | GitHub API | PyGithub |
 | LinkedIn | REST API v202503 |
