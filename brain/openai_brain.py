@@ -92,17 +92,28 @@ RESUME:
 
 LINKEDIN POST (CRITICAL — Apoorav is actively job-seeking):
 - This post must read like a technical showcase for recruiters and hiring managers.
-- Structure: (1) Hook — open with the specific technical PROBLEM or challenge.
-  (2) Solution — explain WHICH technologies you chose and WHY (not just what you built).
-  (3) Architecture — describe how the key components fit together (2-3 sentences).
-  (4) Result — include a concrete metric or outcome if available.
-  (5) CTA — end with "Open to Data Engineer / ML Engineer roles" or similar job signal.
-- Name-drop specific tools, libraries, frameworks, and design decisions.
-  Example: "I chose Apache Airflow over cron because I needed DAG-level retry logic
-  and real-time monitoring via Prefect."
-- Max 1200 chars. Tone: technical but readable (not academic).
-- Include 3-5 hashtags mixing broad (#Python, #DataEngineering) with role-signal tags
-  (#HiringDataEngineers, #OpenToWork, #MLEngineer).
+- Structure:
+  (1) Hook — ONE punchy opening line. A surprising stat, a bold claim, or a question
+      that makes a technical recruiter stop scrolling. No "I built X" openers.
+  (2) The Problem — what pain or gap this project addresses (1-2 sentences).
+  (3) Tech Breakdown — WHICH specific technologies, WHY you chose them over alternatives,
+      and how the key components connect. Name libraries, frameworks, design decisions.
+      Example: "I chose Apache Airflow over cron because I needed DAG-level retry logic
+      and real-time observability via Prefect."
+  (4) Result — a concrete metric, accuracy number, efficiency gain, or learning takeaway.
+  (5) Repo link — on its own line: "🔗 GitHub: {repo_url}"
+  (6) CTA — end with a direct job signal: "Open to Data Engineer / ML Engineer roles —
+      DM me or connect!" Use line breaks to keep it scannable.
+- Use short paragraphs (2-3 lines max each). Add 1-2 relevant emojis to section breaks
+  to improve readability — not decorative spam, just functional markers (🛠️ ⚡ 📊 🔗).
+- Max 1200 chars. Tone: confident and technical, not academic.
+- HASHTAGS — pick 5-7 from these categories:
+  • Role/job signal: #OpenToWork #HiringNow #DataEngineerJobs #MLEngineer #TechJobs
+  • Tech-specific (match the actual stack): #Python #SQL #ApacheAirflow #LangChain
+    #FastAPI #PostgreSQL #AWS #MediaPipe #TensorFlow #SwiftUI etc.
+  • Community/reach: #BuildInPublic #100DaysOfCode #DevCommunity #SideProject
+  • Domain: #DataEngineering #MachineLearning #ComputerVision #AIAgent #LLM
+  Pick the most relevant — don't use generic ones that don't match the project.
 - Never repeat the LinkedIn tone twice in a row.
 
 TWEET:
