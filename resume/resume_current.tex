@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Apoorav Rao
+% Based off of: [https://github.com/sb2nov/resume](https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Apoorav Rao} \\ \vspace{1pt}
+    \small \textit{Data Engineer $|$ ETL Developer $|$ Business Intelligence Specialist} \\
+    +91 9215151721 $|$ \href{mailto:apooravrao@gmail.com}{\underline{apooravrao@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/apoorav-rao}{\underline{linkedin.com/in/apoorav-rao}} $|$
+    \href{https://github.com/apoorav21}{\underline{github.com/apoorav21}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Summary}
+Aspiring Data Engineer skilled in Python, SQL, and AWS with a focus on innovative projects like a real-time sign language interpreter and a self-compiling LLM knowledge base. Experienced in leveraging deep learning and shell scripting for efficient information retrieval and accessibility solutions.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading{BRCM College of Engineering and Technology}{Bahal, Haryana}{B.Tech in Computer Science (Expected Graduation: 2026)}{2022 - 2026}
+    \resumeSubheading{O.P Jindal Modern School}{Hisar, Haryana}{12th, CBSE}{2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{Data Engineering Intern}{Jun 2024 - Mar 2025}{Caterpillar Signs Private Limited (Group Bayport)}{Gurugram, Haryana}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented \textbf{end-to-end ETL pipeline} ingesting CRM data from Freshdesk and Salesforce APIs, processing and classifying customer support tickets using \textbf{LLM-based zero-shot classification} and extractive question analysis. Implemented data cleaning and transformation using DBT, storing processed data in PostgreSQL (AWS RDS) alongside backend order data and S3 file sources, then visualized via Zoho Analytics dashboards. Orchestrated workflows using Apache Airflow with Prefect for monitoring. This solution enabled issue identification within 15 minutes of ticket reporting, improved \textbf{ticket auditing efficiency by 400\%}, \textbf{reduced ticket volume by 15\%}, and identified \textbf{20\%+ more issues} through systematic categorization and customer review integration.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
+    \small{
+    \item \textbf{Programming Languages}: Python, SQL, C, Swift
+    \item \textbf{Data Engineering}: ETL/ELT Pipelines, Data Warehousing, Data Modeling, DBT, Data Integration, Data Quality Management
+    \item \textbf{Workflow Orchestration \& Monitoring}: Apache Airflow, Prefect, Cron Jobs, Windows Task Scheduler
+    \item \textbf{Databases}: PostgreSQL, AWS RDS, Relational Database Design and Optimization
+    \item \textbf{BI \& Analytics Tools}: Zoho Analytics, Power Automate, Data Visualization, Dashboard Development
+    \item \textbf{Python Libraries}: Pandas, NumPy, Requests, SQLAlchemy, Selenium
+    \item \textbf{AI/ML}: LLM Integration, Langchain, Zero-Shot Classification
+    \item \textbf{Web Frameworks}: Django, Flask, FastAPI
+    \item \textbf{Tools \& Version Control}: Git, GitHub, REST APIs, JSON/XML Processing
+    \item \textbf{iOS Development}: Swift, HealthKit, AWS Lambda
+    \item \textbf{Computer Vision}: MediaPipe
+    \item \textbf{Shell Scripting}: Shell
+    }
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Secured second prize in a collegiate hackathon for problem-solving, coding, and innovation.}
+    \resumeSubItem{Finalist in a national hackathon organized by IIM Ahmedabad and Ashoka University, selected in the top 10 teams.}
+  \resumeSubHeadingListEnd
+
+%-----------Certifications-----------
+\section{Certifications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Developing AI Applications with Python and Flask: }\href{https://coursera.org/verify/VDUXJS41RR9B}{\underline{Coursera, Aug 2024}} \\
+     \textbf{Python for Data Science, AI \& Development: }\href{https://coursera.org/verify/NXS6UHQFPM6X}{\underline{Coursera, Aug 2024}} \\
+     \textbf{Hands-on Introduction to Linux Commands and Shell Scripting: }\href{https://coursera.org/verify/S9HCS7K4YXKL}{\underline{Coursera, Sep 2024}} \\
+     \textbf{Git and Github: }\href{https://coursera.org/verify/H7P1GSQYC1OS}{\underline{Coursera, Dec 2024}}
+    }}
+  \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{AI-Duel} $|$ \emph{TypeScript}}{}
+      \resumeItemListStart
+        \resumeItem{Developed AI-Duel for head-to-head AI model comparisons using TypeScript, achieving consistent model evaluation workflows.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{Sign-Language-Translator-} $|$ \emph{MediaPipe, CNN}}{}
+      \resumeItemListStart
+        \resumeItem{Built real-time sign language translator using MediaPipe + CNN achieving 94\% accuracy on 26 ASL gestures.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{llm-knowledge-base} $|$ \emph{Shell}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a self-compiling LLM knowledge base using Shell, automating information retrieval based on Karpathy's pattern.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{API-Testing-AI-Agent} $|$ \emph{Python}}{}
+      \resumeItemListStart
+        \resumeItem{Created an AI-driven tool in Python to auto-generate and execute comprehensive API test cases.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{TrainFlow} $|$ \emph{iOS, GPT-5, AWS, HealthKit}}{}
+      \resumeItemListStart
+        \resumeItem{Designed AI-powered fitness coaching app for iOS with GPT-5, integrating AWS serverless and HealthKit.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

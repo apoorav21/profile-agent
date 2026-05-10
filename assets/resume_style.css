@@ -1,0 +1,66 @@
+@page {
+  size: 612pt 792pt;
+  margin: 0.3in 0.5in 0.3in 0.5in;
+}
+
+/* Explicit reset — * selector (specificity 0) doesn't override WeasyPrint UA p/h rules (specificity 1) */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, td, th, div, span, blockquote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 1.2;
+  color: #111;
+}
+
+.resume { width: 100%; }
+
+h1 {
+  font-size: 14pt;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1pt;
+}
+
+h2 {
+  font-size: 8.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 0.5pt solid #444;
+  padding-bottom: 0.5pt;
+  margin-top: 4pt;
+  margin-bottom: 1.5pt;
+}
+
+h3 {
+  font-size: 8.5pt;
+  font-weight: 600;
+  margin-top: 2.5pt;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 8.5pt;
+  margin-bottom: 1pt;
+}
+
+ul {
+  margin-left: 10pt;
+  margin-top: 0;
+  margin-bottom: 1pt;
+}
+
+li {
+  font-size: 8.5pt;
+  line-height: 1.2;
+}
+
+a { color: #111; text-decoration: none; }
+em { color: #555; font-style: italic; font-size: 8pt; }
+strong { font-weight: 600; }
+hr { display: none; }
